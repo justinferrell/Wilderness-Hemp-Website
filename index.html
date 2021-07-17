@@ -20,34 +20,123 @@
 
 
      <style>
-     
-          html,body{
-               margin: 0px;
-               padding: 0px;
-               font-family: 'Roboto Condensed', sans-serif;
-          }
-          html{
-               background-image: url(bg.jpg);
-               background-size: cover;
-               background-position: center center;
-               background-repeat: no-repeat;
-               height: 100%;
-          }
-          body{
-               height: 100%;
-               width: 100%;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               background: rgba(0,0,0,.8);
-               color: #fff;
-          }
-          h1,
-          span{
-           margin: 0px;
-           text-align: center;
-          }
+
+		html,body{
+			margin: 0px;
+			padding: 0px;
+			font-family: 'Roboto Condensed', sans-serif;
+		}
+		html{
+			background-image: url(img/bg.jpg);
+			background-size: cover;
+			background-position: center center;
+			/* background-repeat: no-repeat; */
+			/* height: 100%; */
+		}
+		body{
+			/* height: 100%; */
+			width: 100%;
+			text-align: center;
+			/* display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center; */
+			/* background: rgba(0,0,0,.8); */
+			color: #fff;
+			
+		}    
+		
+		.container{
+			padding: 100px 0px;
+		}
+		
+		h1,
+		span{
+			margin: 0px;
+			text-align: center;
+		}
+
+		#logo,
+		#logo img{
+			width: 80%;
+			max-width: 320px;
+			margin: 0px auto;
+			height: auto;
+		}
+
+		.grid{
+			width: 90%;
+			max-width: 1024px;
+			margin: 100px auto;
+		}
+
+		.grid .row{
+			display: flex;
+			flex-wrap: wrap-reverse;
+			justify-content: space-between;
+		}
+
+		.grid .row a{
+			flex-basis: 35%;
+			position: relative;
+			padding: 20px;
+			/* background: purple;		 */
+			display: block;	
+		}
+
+		.grid .row a img{
+			max-width: 100%;
+			height: auto;
+			border-radius: 20px;
+			transition: opacity .2s ease-in-out;
+		}
+
+
+		.social a:hover img,
+		.grid .row a:hover img{
+			opacity: .5;
+			transition: opacity .2s ease-in-out;
+		}
+
+		.social{
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: flex;
+			gap: 20px;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		.social a{
+			display: block;			
+		}
+
+		.social a img{
+			width: 50px;
+			height: auto;
+			transition: opacity .2s ease-in-out;
+		}
+
+		@media screen and (min-width: 960px) {
+			.grid .row a{
+				flex-basis: 20%;
+			}
+		}
+
+		/* Light and Dark Modes */
+		@media (prefers-color-scheme: dark) {
+			body {
+				background: rgba(0,0,0,.8); 
+			}
+		}
+		@media (prefers-color-scheme: light) {
+			body {
+				background: rgba(255,255,255,.8); 
+			}
+		}		
      
      </style>
 
@@ -77,12 +166,67 @@
      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <!-- End Google Tag Manager (noscript) -->
 
-     <h1>Wilderness Hemp</h1>
-     <span><strong>West Virginia</strong> <br> Est. 2021</span>
+	 <!-- <div class="social">
+		 <a href="#">
+			 <img loading="lazy" height="128" width="128" src="img/facebook-square-brands.svg"/>
+		 </a>
+		 <a href="#">
+			<img loading="lazy" height="128" width="128" src="img/instagram-square-brands.svg"/>
+		</a>		 
+	 </div> -->
+	 
+	 <div class="container">
+		<picture id="logo">
+			<source srcset="img/hemp-logo-512.webp" type="image/webp">
+			<img src="img/hemp-logo-512.png" alt="The Oslo Opera House">
+		</picture>
 
+		<div class="grid">
+			<div class="row">
+				<a href="photos/full/IMG_0100.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0100.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0206.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0206.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0213.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0213.jpg"/>
+				</a>
 
+				<a href="photos/full/IMG_0303.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0303.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0350.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0350.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0354.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0354.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0489.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0489.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0751.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0751.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0756.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0756.jpg"/>
+				</a>
 
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+				<a href="photos/full/IMG_0758.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0758.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0761.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0761.jpg"/>
+				</a>
+				<a href="photos/full/IMG_0764.jpg" target="_blank" rel="noopener noreferrer">
+					<img loading="lazy" height="512" width="512" src="photos/thumb-512/IMG_0764.jpg"/>
+				</a>
+			</div>
+
+		</div>
+	</div>
+	 
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
 </body>
 
